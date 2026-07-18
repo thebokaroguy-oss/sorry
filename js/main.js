@@ -327,4 +327,38 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => slapEmoji.remove(), 500);
     });
   }
+
+  // ==========================================
+  // RESET SLAP COUNT
+  // ==========================================
+  const resetBtn = document.getElementById('reset-slaps');
+  if (resetBtn && tousifHead) {
+    resetBtn.addEventListener('click', async () => {
+      resetBtn.classList.add('resetting');
+      resetBtn.textContent = '⏳ Resetting...';
+
+      try {
+        // Reset API counter: set to 1 then decrement to 0
+        await fetch('https://api.counterapi.dev/v1/thebokaroguy-sorry/slaps/set?count=1');
+        await fetch('https://api.counterapi.dev/v1/thebokaroguy-sorry/slaps/down');
+
+        slaps = 0;
+        slapCountEl.textContent = '0';
+
+        // Fun visual feedback
+        resetBtn.textContent = '✅ Reset!';
+        setTimeout(() => {
+          resetBtn.textContent = '🔄 Reset Count';
+          resetBtn.classList.remove('resetting');
+        }, 1200);
+      } catch (err) {
+        console.error('Reset failed:', err);
+        resetBtn.textContent = '❌ Failed';
+        setTimeout(() => {
+          resetBtn.textContent = '🔄 Reset Count';
+          resetBtn.classList.remove('resetting');
+        }, 1500);
+      }
+    });
+  }
 });
