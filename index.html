@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Sorry 💐</title>
+  <meta name="description" content="A heartfelt apology, delivered with flowers and love." />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Scroll Progress Bar -->
+  <style>
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, #e74d6c, #f7a4b8, #c9b1ff, #f0c27f);
+      z-index: 9999;
+      transition: width 0.1s linear;
+      border-radius: 0 2px 2px 0;
+      box-shadow: 0 0 10px rgba(231, 77, 108, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Falling Petals Overlay -->
+  <div class="petals-container" aria-hidden="true"></div>
+
+  <!-- ============================================
+       SECTION 1 — HERO: "I'm Sorry"
+       ============================================ -->
+  <section class="parallax-section section-hero" id="hero">
+    <div class="particles"></div>
+
+    <!-- Floating side flowers -->
+    <div class="parallax-flower" data-parallax-speed="-0.15" data-mouse-depth="30"
+         style="top: 8%; left: 3%; width: min(180px, 25vw); opacity: 0.5; transform: rotate(-15deg);">
+      <img src="assets/flowers/individual/hand-drawn-flowers.png" alt="Decorative flowers" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="-0.1" data-mouse-depth="20"
+         style="top: 12%; right: 2%; width: min(160px, 22vw); opacity: 0.4; transform: rotate(10deg);">
+      <img src="assets/flowers/individual/organic-flat-flowers.png" alt="Decorative flowers" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="-0.2" data-mouse-depth="40"
+         style="bottom: 15%; left: 5%; width: min(140px, 20vw); opacity: 0.35;">
+      <img src="assets/flowers/individual/rose-pink.png" alt="Pink rose" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="-0.08" data-mouse-depth="15"
+         style="bottom: 20%; right: 5%; width: min(150px, 20vw); opacity: 0.3; transform: rotate(20deg);">
+      <img src="assets/flowers/individual/lavender-bouquet.png" alt="Lavender bouquet" />
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <p class="hero-subtitle">From the bottom of my heart</p>
+      <h1 class="hero-title">I'm Sorry Nasiba</h1>
+      <p class="hero-message">
+        I know my words hurt you. I know my actions were careless. 
+        You didn't deserve any of it — and I am deeply, truly sorry.
+      </p>
+    </div>
+
+    <!-- Center Flower -->
+    <div class="hero-flower-main" data-parallax-speed="-0.05">
+      <img src="assets/flowers/individual/gradient-flowers.png" alt="A bouquet of apology flowers" />
+    </div>
+
+    <!-- Scroll Down -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2 — "I Was Wrong"
+       ============================================ -->
+  <section class="parallax-section section-wrong" id="wrong">
+    <div class="particles"></div>
+
+    <div class="bg-flower-overlay">
+      <img class="flower-tl" src="assets/flowers/individual/falling-petals.png" alt="" />
+      <img class="flower-br" src="assets/flowers/individual/hand-drawn-flowers.png" alt="" />
+    </div>
+
+    <!-- Parallax side flowers -->
+    <div class="parallax-flower flower-left" data-parallax-speed="-0.12" data-mouse-depth="25">
+      <img src="assets/flowers/individual/organic-flat-flowers.png" alt="Organic flowers" />
+    </div>
+
+    <div class="parallax-flower flower-right" data-parallax-speed="0.08" data-mouse-depth="35">
+      <img src="assets/flowers/individual/rose-pink.png" alt="Pink rose" />
+    </div>
+
+    <div class="content-card reveal">
+      <div class="card-icon">💔</div>
+      <h2 class="card-title">I Was Wrong</h2>
+      <p class="card-text">
+        There's no excuse for the way I acted. I was rude, thoughtless, 
+        and I let you down when you deserved <em>nothing but kindness</em>.
+      </p>
+      <div class="card-divider"></div>
+      <p class="card-text">
+        I replay those moments in my head and wish so badly I could 
+        take them back. <strong>You deserved better from me.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3 — "You Deserve Better" (Two-Column)
+       ============================================ -->
+  <section class="parallax-section section-deserve" id="deserve">
+    <div class="particles"></div>
+
+    <!-- Faded background flower -->
+    <div class="parallax-flower flower-center" data-parallax-speed="-0.05">
+      <img src="assets/flowers/individual/paper-flowers.png" alt="" style="opacity: 0.15; border-radius: 20px;" />
+    </div>
+
+    <div class="two-col">
+      <div class="flower-col reveal-left">
+        <img src="assets/flowers/individual/paper-flowers.png" alt="Paper style flowers bouquet" />
+      </div>
+      <div class="text-col">
+        <div class="content-card reveal-right" style="background: rgba(255,255,255,0.03);">
+          <div class="card-icon">🥀</div>
+          <h2 class="card-title">You Deserve Better</h2>
+          <p class="card-text">
+            You are the most <em>beautiful soul</em> I know — patient, 
+            loving, and kind even when the world isn't.
+          </p>
+          <div class="card-divider"></div>
+          <p class="card-text">
+            The way I acted didn't reflect how much 
+            <strong>you truly mean to me</strong>. I see that now with 
+            every ounce of my being.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4 — "My Promise"
+       ============================================ -->
+  <section class="parallax-section section-promise" id="promise">
+    <div class="particles"></div>
+
+    <!-- Decorative parallax flowers -->
+    <div class="parallax-flower" data-parallax-speed="-0.15" data-mouse-depth="30"
+         style="top: 10%; right: 5%; width: min(220px, 30vw); opacity: 0.45; transform: rotate(-10deg);">
+      <img src="assets/flowers/individual/gradient-flowers.png" alt="Gradient flowers" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="0.1" data-mouse-depth="20"
+         style="bottom: 10%; left: 3%; width: min(200px, 28vw); opacity: 0.35; transform: rotate(12deg);">
+      <img src="assets/flowers/individual/hand-drawn-flowers.png" alt="Hand drawn flowers" />
+    </div>
+
+    <div class="content-card reveal-scale">
+      <div class="card-icon">🌷</div>
+      <h2 class="card-title">My Promise to You</h2>
+      <p class="card-text">
+        I don't just want to say sorry — I want to <em>show you</em> 
+        that I can be the person you deserve:
+      </p>
+      <div class="card-divider"></div>
+      <ul class="promise-list">
+        <li class="reveal reveal-delay-1">I will think before I speak, always</li>
+        <li class="reveal reveal-delay-2">I will treat you with the respect and love you deserve</li>
+        <li class="reveal reveal-delay-3">I will listen — truly listen — when you speak</li>
+        <li class="reveal reveal-delay-4">I will never let my frustration hurt the one I care about most</li>
+      </ul>
+      <div class="card-divider"></div>
+      <p class="card-text" style="margin-top: 1rem;">
+        <strong>These aren't just words. This is my commitment.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FLOWER GALLERY INTERLUDE
+       ============================================ -->
+  <section class="parallax-section" style="background: linear-gradient(180deg, var(--clr-bg-navy), #150d20, var(--clr-bg-navy)); padding: 5rem 2rem; min-height: auto;">
+    <div class="particles"></div>
+    <div style="text-align: center; position: relative; z-index: 5; width: 100%;">
+      <h2 class="card-title reveal" style="margin-bottom: 0.5rem;">Every Flower Says</h2>
+      <p class="hero-subtitle reveal reveal-delay-1" style="opacity: 0; transform: translateY(20px); animation: none; margin-bottom: 2rem; display: block;">I'm thinking of you</p>
+      <div class="flower-gallery">
+        <div class="flower-gallery-item reveal-scale reveal-delay-1">
+          <img src="assets/flowers/individual/gradient-flowers.png" alt="Gradient paper flowers" />
+        </div>
+        <div class="flower-gallery-item reveal-scale reveal-delay-2">
+          <img src="assets/flowers/individual/paper-flowers.png" alt="Paper style flowers" />
+        </div>
+        <div class="flower-gallery-item reveal-scale reveal-delay-3">
+          <img src="assets/flowers/individual/hand-drawn-flowers.png" alt="Hand drawn flowers" />
+        </div>
+        <div class="flower-gallery-item reveal-scale reveal-delay-4">
+          <img src="assets/flowers/individual/organic-flat-flowers.png" alt="Organic flat flowers" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIRTUAL SLAP GAME
+       ============================================ -->
+  <section class="parallax-section section-slap" id="slap" style="background: linear-gradient(180deg, var(--clr-bg-navy) 0%, #1a0f2e 50%, var(--clr-bg-plum) 100%); padding: 5rem 2rem; flex-direction: column; text-align: center;">
+    <div class="particles"></div>
+    <div class="content-card reveal" style="max-width: 600px; padding: 2rem; margin-bottom: 2rem;">
+      <h2 class="card-title" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Still Angry?</h2>
+      <p class="card-text" style="font-size: 1rem;">Go ahead, take it out on me. I deserve it.</p>
+    </div>
+    
+    <div class="slap-container reveal-scale">
+      <div class="score-board">Slaps: <span id="slap-count">0</span></div>
+      <div class="tousif-photo-wrapper" id="tousif-head">
+        <img src="assets/tousif.jpg" alt="Tousif" class="tousif-photo" />
+        <div class="smack-text" id="smack-text">BAM!</div>
+        <div class="red-cheek" id="red-cheek"></div>
+      </div>
+      <p class="slap-hint">(Tap my face to slap me 👋)</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5 — "Please Forgive Me"
+       ============================================ -->
+  <section class="parallax-section section-forgive" id="forgive">
+    <div class="particles"></div>
+
+    <!-- Background petals -->
+    <div class="bg-flower-overlay">
+      <img class="flower-tl" src="assets/flowers/individual/falling-petals.png" alt="" style="opacity: 0.06;" />
+      <img class="flower-br" src="assets/flowers/individual/lavender-bouquet.png" alt="" style="opacity: 0.06;" />
+    </div>
+
+    <!-- Floating flowers -->
+    <div class="parallax-flower" data-parallax-speed="-0.1" data-mouse-depth="25"
+         style="top: 15%; left: 8%; width: min(160px, 22vw); opacity: 0.3;">
+      <img src="assets/flowers/individual/rose-pink.png" alt="Rose" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="-0.18" data-mouse-depth="35"
+         style="top: 20%; right: 8%; width: min(180px, 25vw); opacity: 0.25; transform: rotate(-8deg);">
+      <img src="assets/flowers/individual/lavender-bouquet.png" alt="Lavender" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="0.06" data-mouse-depth="15"
+         style="bottom: 15%; left: 10%; width: min(200px, 28vw); opacity: 0.2; transform: rotate(5deg);">
+      <img src="assets/flowers/individual/organic-flat-flowers.png" alt="Flowers" />
+    </div>
+
+    <div class="parallax-flower" data-parallax-speed="0.12" data-mouse-depth="30"
+         style="bottom: 10%; right: 10%; width: min(170px, 24vw); opacity: 0.25;">
+      <img src="assets/flowers/individual/gradient-flowers.png" alt="Flowers" />
+    </div>
+
+    <div class="content-card reveal">
+      <div class="card-icon">🙏</div>
+      <h2 class="card-title">Please Forgive Me</h2>
+      <p class="card-text">
+        I know forgiveness isn't instant — and I don't expect it to be. 
+        But I hope you know that <em>every single word here comes 
+        straight from my heart</em>.
+      </p>
+      <div class="card-divider"></div>
+      <p class="card-text">
+        <strong>You are irreplaceable.</strong> And I will spend every day 
+        proving that I understand what I almost lost.
+      </p>
+    </div>
+
+    <!-- Beating Heart -->
+    <div class="heart-wrapper reveal-scale">
+      <div class="beating-heart" title="Click me 💖">❤️</div>
+    </div>
+
+    <!-- Final Script Message -->
+    <p class="final-message reveal typewriter" data-text="Forever & always, I love you...">Forever & always, I love you...</p>
+
+    <!-- Bottom flower arrangement -->
+    <div class="flower-gallery" style="margin-bottom: 2rem;">
+      <div class="flower-gallery-item reveal-scale reveal-delay-1" style="width: min(140px, 30vw);">
+        <img src="assets/flowers/individual/rose-pink.png" alt="Rose" />
+      </div>
+      <div class="flower-gallery-item reveal-scale reveal-delay-2" style="width: min(180px, 38vw);">
+        <img src="assets/flowers/individual/lavender-bouquet.png" alt="Lavender bouquet" />
+      </div>
+      <div class="flower-gallery-item reveal-scale reveal-delay-3" style="width: min(140px, 30vw);">
+        <img src="assets/flowers/individual/rose-pink.png" alt="Rose" />
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
