@@ -257,10 +257,23 @@ document.addEventListener('DOMContentLoaded', () => {
   let cheekFadeTimeout;
 
   if (tousifHead) {
+    // 1. Fetch initial count from the global API
+    fetch('https://api.counterapi.dev/v1/thebokaroguy-sorry/slaps')
+      .then(res => res.json())
+      .then(data => {
+        slaps = data.count || 0;
+        slapCountEl.textContent = slaps;
+      })
+      .catch(err => console.error('Could not fetch slaps:', err));
+
     tousifHead.addEventListener('click', (e) => {
-      // Increment score
+      // Increment local score immediately for responsiveness
       slaps++;
       slapCountEl.textContent = slaps;
+      
+      // Update global score
+      fetch('https://api.counterapi.dev/v1/thebokaroguy-sorry/slaps/up')
+        .catch(err => console.error('Could not update slaps:', err));
       
       // Add shake animation
       tousifHead.classList.remove('is-slapped');
